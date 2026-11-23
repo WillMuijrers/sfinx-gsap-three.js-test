@@ -2,7 +2,7 @@
 
 Een simpele scrolly story voor beginners: een 3D-model uit Blender dat meedraait terwijl je scrollt. Gemaakt voor het vak **Multi Media Technology 5** (CMD, Zuyd Hogeschool).
 
-**▶ [Bekijk de live demo](https://willmuijrers.github.io/sfinx-gsap-three.js-test/)**
+**▶ [Bekijk de live demo](https://willmuijrers.github.io/sfinx-gsap-three.js-test/)** · [Stap 1: alleen het model](https://willmuijrers.github.io/sfinx-gsap-three.js-test/stap-1-model-tonen/)
 
 ![De sfinx van de Boschstraat](screenshot.jpg)
 
@@ -24,13 +24,25 @@ Drie schermen. Terwijl je naar beneden scrollt:
 
 > ⚠️ **Een dubbelklik op `index.html` werkt niet.** De browser blokkeert dan het inladen van `sphinx.glb`. Gebruik altijd een lokale server, zoals de VS Code-extensie _Live Server_.
 
+## Twee stappen
+
+Het project bestaat uit twee stappen. Begin bij stap 1.
+
+| Stap | Map | Wat je leert |
+| ---- | --- | ------------ |
+| **1 · Model tonen** | [`stap-1-model-tonen/`](stap-1-model-tonen/) | Een 3D-model op het scherm, zo simpel mogelijk. Nog geen GSAP. |
+| **2 · Met GSAP** | de hoofdmap | Hetzelfde model, nu met scroll-animaties en tekst eroverheen. |
+
 ## De bestanden
 
 ```
-├── index.html     de drie schermen + de <script>-tags
-├── style.css      de opmaak
-├── script.js      de 3D-wereld en de animaties
-└── sphinx.glb     het 3D-model uit Blender
+├── stap-1-model-tonen/
+│   ├── index.html     alleen een <canvas> + de <script>-tags
+│   └── script.js      scene, camera, licht, model, renderer (± 25 regels)
+├── index.html         stap 2: de drie schermen + de <script>-tags
+├── style.css          stap 2: de opmaak
+├── script.js          stap 2: de 3D-wereld en de animaties
+└── sphinx.glb         het 3D-model (wordt door beide stappen gebruikt)
 ```
 
 ## Hoe werkt `script.js`?
@@ -89,4 +101,4 @@ Alles wat je in Blender goed voorbereidt, hoef je niet te programmeren. 🙌
 ## Bronnen
 
 - Verhaal: Wikipedia, [Koninklijke Sphinx](https://nl.wikipedia.org/wiki/Koninklijke_Sphinx) en [Sphinxkwartier](https://nl.wikipedia.org/wiki/Sphinxkwartier)
-- 3D-model: _Seated Sphinx with Griffin Head_
+- 3D-model: [_Seated Sphinx with Griffin Head_](https://threedscans.com/uncategorized/seated-sphinx-with-griffin-head/), marmer, 1e–2e eeuw na Christus, maker onbekend. Gescand in 2025 door [Three D Scans](https://threedscans.com/), een gratis archief van 3D-scans van museumstukken. Voor deze demo voorbereid in Blender.
