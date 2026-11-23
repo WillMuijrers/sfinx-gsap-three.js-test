@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De sfinx · simpele versie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hier tekent Three.js de sfinx -->
+    <canvas></canvas>
+
+    <!-- Scherm 1 -->
+    <section class="content first">
+        <h1>De sfinx van de Boschstraat</h1>
+        <p>Scroll naar beneden ↓</p>
+    </section>
+
+    <!-- Scherm 2: tekst links, sfinx rechts -->
+    <section class="content second">
+        <div class="text">
+            <h2>1834</h2>
+            <p>Petrus Regout start aan de Boschstraat in Maastricht een kristal- en aardewerkfabriek. Later krijgt het bedrijf een sfinx als beeldmerk: <strong>De Sphinx</strong>.</p>
+        </div>
+    </section>
+
+    <!-- Scherm 3: tekst rechts, sfinx links -->
+    <section class="content third">
+        <div class="text">
+            <h2>2006</h2>
+            <p>De fabriek verlaat de binnenstad. Het oude fabrieksterrein heet nu het <strong>Sphinxkwartier</strong>, met filmhuis Lumière en het Eiffelgebouw.</p>
+        </div>
+    </section>
+
+    <!--
+        De JavaScript-bestanden. De volgorde is belangrijk:
+        eerst de libraries (Three.js en GSAP), en als laatste ons eigen script.js.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: #1b1410;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+/* Het canvas staat vast achter de tekst */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Elk scherm is precies één schermhoogte hoog */
+section {
+    position: relative;   /* zo ligt de tekst boven het canvas */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10vw;
+}
+
+/* Scherm 1: tekst bovenin en in het midden */
+.first {
+    justify-content: flex-start;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Scherm 3: het tekstblok staat rechts (de sfinx staat dan links) */
+.third {
+    align-items: flex-end;
+}
+
+/* Scherm 2 en 3: tekst in een blok */
+.text {
+    max-width: 24rem;
+    padding: 2rem;
+    background: rgb(0 0 0 / 0.6);
+    border-radius: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #e0a458;
+}
